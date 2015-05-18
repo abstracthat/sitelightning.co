@@ -1,0 +1,16 @@
+extends page
+
+block vars
+  - var bodyClass = 'collection'
+
+block content
+  section.articles
+    each page in collections[url].pages
+      article.summary
+        h2: a(href= page.url)!= page.title
+        if page.image
+          a(href= page.url)
+            img(src= page.image, alt!= page.title)
+        p!= page.intro
+        a(href= page.url) Read more &raquo;
+

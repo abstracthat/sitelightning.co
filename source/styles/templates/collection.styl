@@ -1,0 +1,29 @@
+.collection
+  .intro
+    rhythm 1.5
+
+    p:first-child
+      font-size 1.2em  
+
+  // Index section that lists pages in this collection
+  // .articles
+
+  .summary
+    rhythm 1.5
+
+    &:last-child
+      margin-bottom 0
+
+    h2
+      @extends h3
+      rhythm .5
+
+    p
+      rhythm .5
+
+    a
+      link darken(olive, 30%), 'lighten'
+      font-weight 600
+
+    img
+      rhythm .5

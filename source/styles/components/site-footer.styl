@@ -1,0 +1,32 @@
+.site-footer
+  full-width()
+  padding-vertical (golden)rem
+  background-color black
+  text-align center
+
+  p
+    margin-bottom (base / golden)rem
+    color teal - 15%
+
+    +above(3)
+      margin-bottom (1 / golden)rem
+
+    a
+      link teal - 15%
+
+  ul
+    margin-sides auto
+    margin-bottom 0
+    list-style none
+
+    li
+      display inline
+
+      &:first-child
+        margin-left 0
+
+      a
+        link teal - 15%
+
+        &.current-page
+          font-weight bold

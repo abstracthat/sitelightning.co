@@ -1,0 +1,31 @@
+.post
+  .page-header
+    padding-rhythm 1 .5
+
+    h1
+      rhythm 1
+
+  .main .content
+    padding-rhythm 0 1
+
+    // Article intro paragraph
+    > p:first-of-type
+      font-size 1.25rem
+      line-height 1.5
+
+  time
+    display inline-block
+    rhythm .5
+    font-style italic
+    color gray
+
+.collection-nav
+  .previous
+    column '1/2'
+    padding-rhythm()
+
+  .next
+    column '1/2'
+    float right !important // force float if there's no previous link
+    padding-rhythm()
+    text-align right

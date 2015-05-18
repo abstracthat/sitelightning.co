@@ -1,0 +1,24 @@
+// Global layout classes
+.page
+  center site
+
+.container
+  group()
+
+.main
+  padding-sides()
+
+  +above(site + gutter)
+    padding-sides 0
+
+  // the content (prose) should have a readable measure
+  .content
+    center tablet
+    padding-rhythm 0 1.5
+
+.page-header
+  padding-rhythm 1
+  text-align center
+
+  h1
+    margin-bottom 0
