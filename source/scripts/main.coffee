@@ -4,6 +4,8 @@ $ ->
   # Instantiate FastClick on the body
   FastClick.attach document.body
 
+  hljs.initHighlightingOnLoad()
+
   # Toggle menu open
   $('#menuToggle').on 'click', ->
     $('.menu').toggleClass 'open'

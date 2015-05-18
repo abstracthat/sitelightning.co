@@ -23,12 +23,14 @@ footer:
 scripts:
   - /lib/fastclick.js
   - /lib/jquery.js
+  - /lib/highlight.pack.js
   - /main.js
 
 # CSS Build
 # If you need to add CSS files, add them here.
 styles:
   - /lib/normalize.css
+  - /lib/default.css
   - /main.css
 
 # Google Fonts
