@@ -1,9 +1,8 @@
 submitForm = require './submit-form'
 
 $ ->
-  # Instantiate FastClick on the body
+  # Initialize FastClick and highlightjs on the body
   FastClick.attach document.body
-
   hljs.initHighlightingOnLoad()
 
   # Toggle menu open

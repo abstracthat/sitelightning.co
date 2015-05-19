@@ -12,6 +12,8 @@ date: 5-7-15
 
 We'd all just like to get down to writing the content but in reality we need some meta data for every page in order to make our content more useful to people finding it in search engines or social sites. So we have to learn to love SEO and [Open Graph](http://ogp.me/) tags.
 
+Site Lightning is set up to parse the front-matter out of all of your files. If you've never heard of "front-matter" before it's basically just a meta-data object to pass in values to our templates. It's written in [YAML](http://yaml.org/) syntax.
+
 ## Typical Usage
 Typically you would use the following. Note that you don't need `layout` if it's a Jade file.
 
@@ -22,19 +24,27 @@ layout: post
 tags:
   - fun
 date: 1-2-15
-og-title: 70 characters
-og-description: 200 characters
-og-image: 1200x627.jpg
+og_title: 70 characters
+og_description: 200 characters
+og_image: 1200x627.jpg
 ```
 
-## Minimal Meta
-At the minimum you should use a `title` and `description` (and `layout` if it's markdown). Posts in collections are sorted by date (newest first) so you might also want `date`.
+## Minimal Meta for a Jade Page
+If you don't at least include a title and description then Jade will through an error during compile. This is intentional to force you into using good SEO standards.
 
 ```yaml
 title: Title
 description: Meta description
-layout: post # only for markdown
-date: 1-2-15 # if document is in a collection
+```
+
+## Minimal Meta for a Markdown Page
+For markdown files, at the minimum you should use a `title`, `description` and `layout`. Pages in collections are sorted by date (newest first) so you might also want `date`. It's not required though.
+
+```yaml
+title: Title
+description: Meta description
+layout: post
+date: 1-2-15 # optional
 ```
 
 ## All the Meta
@@ -86,6 +96,8 @@ The open graph image should ideally be 1.91/1 ratio 1200px x 627px.
 Twitter cards can be summary, photo, video, product, app, gallery, and “large 
 version” summary. If blank we assume summary
 
+### no_comments
+If you have Disqus set up in your `site.yml` then posts will have the Disqus comments div inserted automatically. If you don't want the comments to show for a particular post then just include `no_comments: true`.
+
 ## Need More Help?
 [This article](https://blog.kissmetrics.com/open-graph-meta-tags/) was very helpful for me when I set up the open graph template.
-
