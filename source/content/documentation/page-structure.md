@@ -95,8 +95,10 @@ The style here is to contain the contents (which are assumed to be prose) to a r
 
 If you are making a content page with Jade that doesn't have a block of prose then use the `main` block which will overwrite the `page-header` and `content` blocks.
 
-## Promotion Sign Up
-If you have a website, it's a good idea to grow an email list. That's what the `promotion` block is for. There is a component for an email optin form that hooks up with Mailchimp (defined in `site.yml`). Create some value and a reason to optin. This block has basic styles defined in `promotion.styl`. It's also using some of the site-wide form styles in `forms.styl`.
+## Page Footer
+If you have a website, it's a good idea to grow an email list. That's why the `page-footer` block has a `.promotion` section waiting for you.
+
+There is a component for an email optin form that hooks up with Mailchimp (defined in `site.yml`). Create some value and a reason to optin. This block has basic styles defined in `promotion.styl`. It's also using some of the site-wide form styles in `forms.styl`.
 
 ```jade
 +signup('xxlistIDxx', 'Sign Up Now')
@@ -106,6 +108,8 @@ If you have a website, it's a good idea to grow an email list. That's what the `
 ```
 
 If you have a content page or template that is extending page and you don't want the promotion to show then just pass an empty block to `promotion`.
+
+There is some validation going on for this in `submit-form.coffee` so make sure you include an `h2` tag above your form as we are currently pushing error messages there. I realize this is brittle and I'd like to eventually replace it with some form validation / error message library like [parsely.js](http://parsleyjs.org/). Pull request, anyone?
 
 ## Site Footer
 And last is the site footer. The styles are basic and defined in `site-footer.styl`. The menu items are defined in `site.yml`.
