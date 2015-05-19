@@ -15,7 +15,7 @@ I wrote a [fairly simple Node script](https://github.com/abstracthat/gulp-lightn
 
 After you have run the default `gulp` task take a look at `site.json` in the root of your project.
 
-The top-most structure looks like this (in Coffeescript because I'm typing this out for you and who likes to actually "write" JSON?)...
+The top-most structure looks like this (in Coffeescript because I'm typing this out for you and who likes to actually "write" JSON?).
 
 ```coffee
 site:
