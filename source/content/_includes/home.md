@@ -52,7 +52,7 @@ If it's layout of basic styles for a template it should go in `templates` and ot
 There is also a `settings.styl` file for site wide variables and a `main.styl` file to collect all the styles.
 
 ### Stylus Mixins
-[Stylus Lightning](https://github.com/abstracthat/stylus-lightning) mixins are included. You also have the very nice stylus library, [Axis](http://axis.netlify.com/). It includeds many useful mixins so have a look at their [docs](http://axis.netlify.com/).
+[Stylus Lightning](https://github.com/abstracthat/stylus-lightning) mixins are included. You also have access to [Axis](http://axis.netlify.com/). It includes many useful mixins so have a look at their [docs](http://axis.netlify.com/).
 
 #### [Media Queries](/documentation/media-queries-made-simple/)
 Media queries are handled by [Rupture](http://jenius.github.io/rupture/). I've tweaked the breakpoint slices and variable names which you can see in `settings.styl`.
@@ -72,7 +72,7 @@ Feel free to add modules from NPM and require them in `main.coffee` if they are 
 #### Bower Integration
 To add a library that is not in NPM you can use [Bower](http://bower.io/). Remember to save it... `bower install --save fastclick`. You'll have to restart `gulp` as we don't currently watch the `bower_components` folder.
 
-To use a library from Bower, add the main CSS/JS file(s) to `site.yml`. During development it will be multiple files served from a `lib` folder but the final production deploy will concat and minify all that together with your own scripts / styles in the order you have it in `site.yml`.
+To use a library from Bower, add the main CSS/JS file(s) to `site.yml`. During development it will be multiple files served from a `lib` folder but the final production deploy will concat and minify all that together with your own scripts and styles in the order you have it in `site.yml`.
 
 ## Read the Docs
 The full [documentation is a work in progress](/documentation/). Here are the docs for the libraries and languages used.
