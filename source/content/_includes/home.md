@@ -1,15 +1,11 @@
 ## Quick Start for Developers
 You need [Node](http://nodejs.org), [Gulp](http://gulpjs.com/) and [Bower](http://bower.io/): `npm i -g gulp bower`. You'll also probably want syntax support in your text editor for Jade, Stylus, Coffeescript, and YAML.
 
-Getting started is easy... just download the boilerplate, install the dependencies and run Gulp.
+Getting started is easy...
 
-```bash
-curl -L -o site-lightning-master.zip https://github.com/abstracthat/site-lightning/archive/master.zip
-unzip site-lightning-master.zip
-cd site-lightning-master
-npm install
-gulp
-```
+1. Download the [boilerplate](https://github.com/abstracthat/site-lightning/archive/master.zip)
+2. Unzip, rename and cd into the directory
+3. Install and run with `npm install && gulp`
 
 That will get everything installed and start the development server so you can get to work. Your first install will probably take a few minutes due to graphics library testing.
 
