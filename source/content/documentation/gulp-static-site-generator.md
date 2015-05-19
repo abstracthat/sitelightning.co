@@ -30,7 +30,7 @@ After you have run the default gulp task take a look at `site.json` in the root 
         "/license/": {
             "url": "/license/",
             "title": "License",
-            "intro": "Site Lightning is <a href=\"http://github.com/abstracthat/sitelightning\">open source</a> and contributions are welcome. The source code is under the MIT license."
+            "intro": "Site Lightning is <a href=\"https://github.com/abstracthat/sitelightning\">open source</a> and contributions are welcome. The source code is under the MIT license."
         },
         "/terms/": {
             "url": "/terms/",
@@ -90,7 +90,7 @@ After you have run the default gulp task take a look at `site.json` in the root 
         "url": "/license/"
     }],
     "social": [{
-        "github": "http://github.com/abstracthat"
+        "github": "https://github.com/abstracthat"
     }, {
         "twitter": "@abstracthat"
     }],

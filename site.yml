@@ -30,7 +30,7 @@ scripts:
 # If you need to add CSS files, add them here.
 styles:
   - /lib/normalize.css
-  - /lib/default.css
+  - /lib/hybrid.css
   - /main.css
 
 # Google Fonts
@@ -51,7 +51,7 @@ google_fonts:
 
 # Social accounts
 social:
-  - github: http://github.com/abstracthat
+  - github: https://github.com/abstracthat
   - twitter: @abstracthat
   # - facebook: 
   # - instagram: 

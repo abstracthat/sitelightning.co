@@ -3,7 +3,7 @@ title: License
 layout: page
 ---
 
-Site Lightning is [open source](http://github.com/abstracthat/sitelightning) and contributions are welcome. The source code is under the MIT license.
+Site Lightning is [open source](https://github.com/abstracthat/sitelightning) and contributions are welcome. The source code is under the MIT license.
 
 Copyright &copy; 2015 Josh Bertrand
 

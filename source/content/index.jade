@@ -9,19 +9,18 @@ block vars
   - bodyClass = 'home'
 
 block page-header
-  header.pitch
-    :markdown
-      # Discover Rapid Static Site Development Bliss
-      Site Lightning &mdash; a static site generator for front-end developers. Use Gulp, Stylus, Jade, Coffeescript, &amp; Markdown. Organized structure, useful foundation styles and templates. Best web practices baked in.
+  :markdown
+    # Discover Rapid Static Site Development Bliss
+    Site Lightning &mdash; a static site generator for front-end developers. Use Gulp, Stylus, Jade, Coffeescript, &amp; Markdown. Organized structure, useful foundation styles and templates. Best web practices baked in.
 
-    .buttons
-      a.primary.button(href='#quick-start-for-developers') Quick Start
-      a.secondary.button(href='/documentation/') Read the Documentation
+  .buttons
+    a.primary.button(href='#quick-start-for-developers') Quick Start
+    a.secondary.button(href='/documentation/') Read the Documentation
 
 block content
   include:markdown _includes/home.md
 
   .buttons
-    +share-button('github', 'http://github.com/abstracthat/sitelightning')
+    +share-button('github', 'https://github.com/abstracthat/sitelightning')
     +share-button('facebook')
     +share-button('twitter')

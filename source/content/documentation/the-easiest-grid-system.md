@@ -14,7 +14,7 @@ A grid system should be simple and make your inner designer happy. Create rows, 
 ## Mixin Documenation
 There are no rendered classes. Just use the mixins. Or setup your own `.col-1-3` sort of classes with the mixins if that's your cup of tea.
 
-### Settings
+##### Settings
 Gutter is used to set padding on rows and margin-right on columns. The `max-site-width` gives you a default for the `center()` mixin width. Typically you would set it to the max-width of your site. This is in `settings.styl`.
 
 ```stylus

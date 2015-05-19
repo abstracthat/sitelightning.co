@@ -20,5 +20,13 @@
     "jquery": "~2.1.3",
     "normalize.css": "~3.0.3",
     "highlightjs": "~8.5.0"
+  },
+  "overrides": {
+    "highlightjs": { 
+      "main": [
+        "highlight.pack.js",
+        "styles/hybrid.css"
+      ]
+    }
   }
 }
