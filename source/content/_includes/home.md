@@ -1,8 +1,7 @@
 ## Quick Start for Developers
 You need [Node](http://nodejs.org), [Gulp](http://gulpjs.com/) and [Bower](http://bower.io/): `npm i -g gulp bower`. You'll also probably want syntax support in your text editor for Jade, Stylus, Coffeescript, and YAML.
 
-Getting started is easy...
-
+### Download and Run
 1. Download the [boilerplate](https://github.com/abstracthat/site-lightning/archive/master.zip)
 2. Unzip, rename and cd into the directory
 3. Install and run with `npm install && gulp`
@@ -74,8 +73,8 @@ To add a library that is not in NPM you can use [Bower](http://bower.io/). Remem
 
 To use a library from Bower, add the main CSS/JS file(s) to `site.yml`. During development it will be multiple files served from a `lib` folder but the final production deploy will concat and minify all that together with your own scripts and styles in the order you have it in `site.yml`.
 
-## Read the Docs
-The full [documentation is a work in progress](/documentation/). Here are the docs for the libraries and languages used.
+## Library Documentation
+Here are the docs for the libraries and languages used.
 
 0. [Happy Grid](https://github.com/abstracthat/happy-grid)
 0. [Rupture](http://jenius.github.io/rupture/)
