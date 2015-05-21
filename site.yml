@@ -55,12 +55,12 @@ disqus: sitelightning
 
 # Social accounts
 social:
-  - github: https://github.com/abstracthat
-  - twitter: @abstracthat
-  # - facebook: 
-  # - instagram: 
-  # - pinterest: 
-  # - youtube: 
+  github: https://github.com/abstracthat
+  twitter: @abstracthat
+  # facebook: 
+  # instagram: 
+  # pinterest: 
+  # youtube: 
 
 # Mailchimp
 # Get your user ID from an existing list's form, it's the 'u' value.
@@ -70,6 +70,11 @@ social:
 mailchimp:
   submit: http://marketfurther.us10.list-manage.com/subscribe/post
   user: aa52d5e1b14f1c50429ce9c39
+
+# FB Admin
+# Your Facebook numeric ID gives you data in Page Insights
+# It gets added as an open graph tag
+# fbadmins: 
 
 # Google Analytics
 # Adds Google Analytics tracking if you add your key here
