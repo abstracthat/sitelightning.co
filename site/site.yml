@@ -1,0 +1,96 @@
+# Global site config
+site:
+  name: Site Lightning
+  url: http://sitelightning.co
+
+# Main menu
+header:
+  - title: Documentation
+    url: /documentation/
+  - title: Contact
+    url: /contact/
+
+# Footer menu
+footer:
+  - title: Terms of Service
+    url: /terms/
+  - title: License
+    url: /license/
+
+# Javscript Build
+# If you need to include a new JS file add it here. Bower installs are in lib.
+# Keep in mind the order you want them
+scripts:
+  - /lib/fastclick.js
+  - /lib/jquery.js
+  - /lib/highlight.pack.js
+  - /main.js
+
+# CSS Build
+# If you need to add CSS files, add them here.
+styles:
+  - /lib/normalize.css
+  - /lib/hybrid.css
+  - /main.css
+
+# Google Fonts
+# If you are using Google Fonts list the family name and the weights
+# You can use more than one
+google_fonts:
+  - family: Open Sans
+    weights:
+      - 400
+      - 400italic
+      - 600
+      - 600italic
+      - 800
+
+# Typekit
+# If you are using Typekit pass the kit ID here
+# typekit: xxx
+
+# Comments
+# Disqus https://disqus.com/
+disqus: sitelightning
+
+author:
+  name: Josh Bertrand
+  email: josh.bertrand@gmail.com
+
+# Social accounts
+social:
+  github: https://github.com/abstracthat
+  twitter: @abstracthat
+  # facebook: 
+  # instagram: 
+  # pinterest: 
+  # youtube: 
+
+# Mailchimp
+# Get your user ID from an existing list's form, it's the 'u' value.
+# The submit url is the action url for the form.
+# These are the same across all lists in your account. Here's how to find them:
+# http://kb.mailchimp.com/lists/signup-forms/host-your-own-signup-forms
+mailchimp:
+  submit: http://marketfurther.us10.list-manage.com/subscribe/post
+  user: aa52d5e1b14f1c50429ce9c39
+
+# FB Admin
+# Your Facebook numeric ID gives you data in Page Insights
+# It gets added as an open graph tag
+# fbadmins: 
+
+# Google Analytics
+# Adds Google Analytics tracking if you add your key here
+# google_analytics: UA-XXXX-X
+
+# Optimizely
+# If you are using Optimizely enter your snippet ID.
+# In the link they give you it's the JS file name //cdn.optimizely.com/js/xxx.js
+# optimizely: xxx
+
+# Segment Analytics
+# If you are using Segment.com Analytics.js library include your API write key.
+# Don't use Google Analytics (above), enable GA in Segment instead.
+# https://segment.com/docs/libraries/analytics.js/quickstart/
+# segment: xxx

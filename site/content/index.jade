@@ -1,0 +1,27 @@
+---
+title: "Site Lightning --- Rapid Website Development"
+description: Site Lightning is the wicked fast way to design and build a static website. Try it out now. It's fun!
+---
+
+extends ../templates/page
+
+block vars
+  - bodyClass = 'home'
+
+block page-header
+  :markdown
+    # Discover Rapid Static Site Development Bliss
+    Site Lightning &mdash; a front-end development framework for building websites and email campaigns. Use Gulp, Stylus, Jade, Coffeescript, &amp; Markdown. Organized structure, useful foundation styles and templates. Best web practices baked in.
+
+  .buttons
+    a.primary.button(href='https://github.com/abstracthat/site-lightning/archive/master.zip') Download Now
+    a.secondary.button(href='/documentation/') Read the Documentation
+
+block content
+  include:markdown _includes/home.md
+
+  a.button.primary(href='/documentation') Read the Documentation
+
+  .buttons
+    +share-button('github', 'https://github.com/abstracthat/sitelightning')
+    +share-button('twitter')

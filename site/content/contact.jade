@@ -1,0 +1,17 @@
+---
+title: Get in Touch
+description: Fill out the contact form to send us an email.
+---
+
+extends ../templates/page
+
+block vars
+  - bodyClass = 'contact'
+
+block content
+  :markdown
+    Fill out the form to send us a message. We'll write back ASAP.
+
+  //- Contact Form mixin: email, redirect, email subject
+  +contact-form(author.email, '#{site.url}/message-sent/', site.name)
+  
